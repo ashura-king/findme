@@ -31,7 +31,8 @@ class LostItemController extends Controller
             'category' => 'required',
             'location_lost' => 'required',
             'date_lost' => 'required|date',
-            'photo' => 'image'
+            'photo' => 'image',
+            
         ]);
 
         if ($request->hasFile('photo')) {
